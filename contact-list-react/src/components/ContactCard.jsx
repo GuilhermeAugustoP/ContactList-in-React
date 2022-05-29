@@ -1,15 +1,21 @@
-import React from 'react';
+import { useEffect } from "react";
+//props é do tipo Objeto
+//As propriedades de props são os atributos que são passados para o componente.
 
-const ContactCard = () => {
-  const contact = {
-    name: 'Gui',
-    tel: '3199999999',
-  };
+const ContactCard = ({contacts}) => {
+  // const contact = {
+  //   name: 'Fulano',
+  //   number: '99999999',
+  // }
+
+  useEffect(() => {
+    console.log('contacts => ', contacts)
+  }, [contacts]);
   
   return (
     <div>
-        <p> Nome: {contact.name}</p>
-        <p> Telefone: {contact.tel}</p>
+        <p> Nome: {contacts.name}</p>
+        <p> Telefone: {contacts.number}</p>
     </div>
   );
 }
