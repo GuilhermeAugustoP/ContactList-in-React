@@ -1,10 +1,43 @@
 .App {
+  position: relative;
   text-align: center;
-}
+  height: 871px;
+  width: 360px;
+  left: 261px;
+  top: -1px;
+  border-radius: 0px;
+  background: #d83838;
 
+
+}
+.ContactHeader {
+  position: absolute;
+  height: 50px;
+  width: 315px;
+  left: 15px;
+  top: 775px;
+  border-radius: 0px;
+}
+.ContactTitle {
+  position: absolute;
+  width: 81px;
+  height: 23px;
+  left: 15px;
+  top: 19px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: flex-end;
+
+  color: #000000;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {

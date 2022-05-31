@@ -1,15 +1,10 @@
 import React from 'react';
 
-const ContactCard = () => {
-  const contact = {
-    name: 'Gui',
-    tel: '3199999999',
-  };
-  
+const ContactCard = ({contactList}) => {
   return (
     <div>
-        <p> Nome: {contact.name}</p>
-        <p> Telefone: {contact.tel}</p>
+        <p> Nome: {contactList.name}</p>
+        <p> Telefone: {contactList.tel}</p>
     </div>
   );
 }
