@@ -11,7 +11,7 @@ import ContactCardHeader from './components/ContactCardHeader';
 function App() {
   const contactList = [
     {
-      name: 'Guilherme',
+      name: 'GuilhermeTeste',
       tel: '3199999999'
     },
     {
@@ -28,17 +28,17 @@ function App() {
     }
   ]
   return (
-    <>
-    <div className="ContactHeader">
-      <div className="ContactTitle"> 
-        <ContactCardHeader/>
+    <div className='Container'>
+      <div className="ContactTitle">
+        <div className="ContactHeader">
+          <ContactCardHeader />
+        </div>
+      </div>
+      <div className="App">
+        {contactList.map((contactList, index) => (<ContactCard contactList={contactList} />))}
       </div>
     </div>
-      <div className="App">
-         {contactList.map((contactList, index) => (<ContactCard contactList={contactList}/>))}
-      </div>
-    </>
-    
+
   );
 }
 

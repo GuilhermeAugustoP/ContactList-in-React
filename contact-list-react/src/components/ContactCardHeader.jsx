@@ -3,7 +3,11 @@ import React from 'react';
 const ContactCardHeader = () => {
     return (
       <div>
-          <h1>Contacts</h1>
+          <p>Contacts</p>
+          <div>
+            <img src='..\img\search.png'></img>
+            <img src='..\img\menu.png'></img>
+          </div>
       </div>
     );
   }

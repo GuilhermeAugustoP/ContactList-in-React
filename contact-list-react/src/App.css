@@ -1,25 +1,63 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+}
 .App {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   text-align: center;
-  height: 871px;
   width: 360px;
   left: 261px;
   top: -1px;
   border-radius: 0px;
-  background: #d83838;
+  border: 2px solid;
+  background: #E5E5E5;
+}
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+}
+#pName {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
 
 
 }
+#pNumber {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8B8B8B;
+
+
+
+}
+.ContactCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .ContactHeader {
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   height: 50px;
   width: 315px;
   left: 15px;
   top: 775px;
   border-radius: 0px;
+  background: #FFFFFF;
 }
 .ContactTitle {
-  position: absolute;
   width: 81px;
   height: 23px;
   left: 15px;
@@ -27,7 +65,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 23px;
   display: flex;
   align-items: flex-end;
